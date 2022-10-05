@@ -66,39 +66,48 @@ function App() {
         .
       </Text>
       {/* Button 의 기본 컬러는 블루 onClick 대신 onPress 사용한다 */}
-      <Button 
-      onPress={() => { 
-        setChange(!change)
-      }} 
-      color={change? "tomato": ''}
-      title="색깔 변경" />
+      <Button
+        onPress={() => {
+          setChange(!change)
+        }}
+        color={change ? "tomato" : ''}
+        title="색깔 변경" />
+        <button
+        onClick={()=>{
+          setChange(!change)
+        }}
+        >버튼 태그 원래 이거거든</button>
       <CheckBox
-      color="red"
-      onValueChange={()=>{}}
+        color="red"
+        onValueChange={() => { }}
       />
-      <CheckboxPage/>
+      <CheckboxPage />
       {/* <ImagePage/> */}
-      <ModalPage/>
-      <PressablePage/>
-      <ProgressBarPage/>
-      <ScrollViewPage/>
-      <SwitchPage/>
-      <TextPage/>
-      <TextInputPage/>
+      <ModalPage />
+      <PressablePage />
+      <ProgressBarPage />
+      <ScrollViewPage />
+      <SwitchPage />
+      <TextPage />
+      <TextInputPage />
       {/* <ViewPage/> */}
-      <ClipboardPage/>
-      <AppStatePage/>
-      <LinkingPage/>
+      <ClipboardPage />
+      <AppStatePage />
+      <LinkingPage />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  app: Platform.OS === 'ios'? {backgroundColor: 'tomato', marginHorizontal: "auto",
-  maxWidth: 500}: {backgroundColor : 'white',
-  marginHorizontal: "auto",
-  maxWidth: 500}
-,
+  app: Platform.OS === 'ios' ? {
+    backgroundColor: 'blue', marginHorizontal: "auto",
+    maxWidth: 500
+  } : {
+    backgroundColor: 'white',
+    marginHorizontal: "auto",
+    maxWidth: 500
+  }
+  ,
   logo: {
     height: 80
   },

@@ -90,7 +90,8 @@ const styles = StyleSheet.create({
     borderWidth: 0.5,
     borderColor: '#0f0f0f',
     padding: 4,
-    marginVertical: '1rem'
+    marginVertical: '1rem',
+    paddingLeft:'20px'
   },
   multiline: {
     borderWidth: 0.5,
